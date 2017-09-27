@@ -1,0 +1,122 @@
+html, body, .wrap {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.wrap header {
+  flex-shrink: 0;
+  height: 1rem;
+  background: #000;
+}
+
+.wrap header > ul {
+  display: flex;
+  color: #fff;
+  height: 1rem;
+  align-items: center;
+}
+
+.wrap header > ul > :nth-child(1), .wrap header > ul > :nth-child(3) {
+  width: 12%;
+  text-align: center;
+}
+
+.wrap header > ul > :nth-child(2) {
+  flex: 1;
+  border-left: 1px solid #aaa;
+  padding-left: 0.4rem;
+}
+
+.wrap section {
+  flex: 1;
+  overflow: hidden;
+}
+
+.wrap .mark {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 0 0.2rem;
+}
+
+.wrap .mark .markW {
+  width: 7rem;
+  height: 8.8rem;
+  background: #fff;
+  border-radius: 0.2rem;
+  position: absolute;
+  top: 1rem;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+
+.wrap .mark .markW > ul {
+  padding: 0 0.6rem;
+}
+
+.wrap .mark .markW > ul > :nth-child(1) {
+  text-align: center;
+  margin-top: 0.6rem;
+}
+
+.wrap .mark .markW > ul > :nth-child(1) > :nth-child(1) {
+  margin: 0 auto;
+  width: 2.5rem;
+  height: 1rem;
+}
+
+.wrap .mark .markW > ul > :nth-child(1) > :nth-child(1) img {
+  width: 100%;
+  height: auto;
+}
+
+.wrap .mark .markW > ul > :nth-child(2), .wrap .mark .markW > ul > :nth-child(3) {
+  margin-top: 0.5rem;
+  height: 1rem;
+  border-bottom: 0.01rem solid #ccc;
+  display: flex;
+  align-items: center;
+  padding: 0 0.2rem;
+}
+
+.wrap .mark .markW > ul > :nth-child(2) label, .wrap .mark .markW > ul > :nth-child(3) label {
+  display: inline-block;
+  width: 0.3rem;
+  height: 0.5rem;
+}
+
+.wrap .mark .markW > ul > :nth-child(2) label img, .wrap .mark .markW > ul > :nth-child(3) label img {
+  width: 100%;
+  height: auto;
+}
+
+.wrap .mark .markW > ul > :nth-child(2) input, .wrap .mark .markW > ul > :nth-child(3) input {
+  width: 80%;
+  border: none;
+  outline: none;
+  padding-left: 0.2rem;
+}
+
+.wrap .mark .markW > ul > :nth-child(4) {
+  margin-top: 0.9rem;
+  width: 100%;
+  height: 0.8rem;
+  background: #2FBA77;
+  text-align: center;
+  line-height: 0.8rem;
+  color: #fff;
+  font-size: 0.24rem;
+  border-radius: 0.2rem;
+}
